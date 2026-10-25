@@ -59,11 +59,11 @@ export const projects: Project[] = [
 },
 
   {
-    name: 'Portfolio Site',
-    description: 'My earlier personal portfolio website, built with HTML, CSS, Bootstrap, JavaScript, React, and Tailwind CSS.',
-    tags: ['React', 'Tailwind CSS', 'Bootstrap'],
+       name: 'Portfolio Site',
+    description: 'My personal developer portfolio, the site you are on now. Built with React, TypeScript, Vite, Tailwind CSS and Motion, with a scroll-driven project showcase, animated sections and a working contact form.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Motion'],
     color: '#3B2A5A',
     image: portfolioImage,
-    link: 'https://portfolio-anjana-ts-projects.vercel.app/',
+    link: 'https://anjana-t.vercel.app/',
   },
 ];

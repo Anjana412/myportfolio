@@ -2,7 +2,7 @@
 
 My personal portfolio: a single-page site with my projects, skills, experience and a contact form.
 
-**Live site:** https://YOUR-VERCEL-URL
+**Live site:** https://anjana-t.vercel.app/
 
 ## Built with
 
