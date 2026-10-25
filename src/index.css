@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- colours and fonts: change them here and the whole site follows ---------- */
+:root {
+  --ink: #2A1B4D;
+  --paper: #F7F3FF;
+  --line: #D5C8F2;
+  --line-soft: #E7DDFB;
+  --accent: #E040C8;
+  --accent-deep: #C42FB0;
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-body); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+@layer components {
+  /* every section below the hero */
+  .section { @apply relative bg-paper px-5 pb-[120px] pt-[110px] text-ink; }
+  .section--white { @apply bg-white; }
+
+  /* buttons: .btn plus a colour (--dark, --light, --outline) and optionally --sq (squarer) or --sm (smaller) */
+  .btn {
+    @apply inline-flex cursor-pointer items-center gap-2 rounded-full border border-transparent px-6 py-3 font-body text-[.92rem] font-bold no-underline transition duration-200 motion-reduce:transition-none;
+  }
+  .btn:hover:not(:disabled) { @apply -translate-y-0.5; }
+  .btn:disabled { @apply cursor-default opacity-[.65]; }
+  .btn--dark { @apply bg-ink text-white; }
+  .btn--dark:hover:not(:disabled) { @apply bg-accent-deep; }
+  .btn--light { @apply border-line bg-white text-ink; }
+  .btn--light:hover { @apply border-ink; }
+  .btn--outline { @apply border-ink bg-transparent text-ink; }
+  .btn--outline:hover { @apply bg-ink text-white; }
+  .btn--sq { @apply rounded-[10px]; }
+  .btn--sm { @apply px-[15px] py-2 text-[.85rem]; }
+}
